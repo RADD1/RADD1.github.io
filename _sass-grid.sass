@@ -1,0 +1,40 @@
+$offset: 14px
+
+=flex($cont)
+    display: flex
+    flex-wrap: wrap
+    justify-content: $cont
+    align-items: center
+
+=title_h2()
+    color: #000
+    font-family: Roboto
+    font-size: 3rem
+    font-weight: 700
+
+=title_h3()
+    color: #010101
+    font-family: Roboto
+    font-size: 1.8rem
+    font-weight: 700
+
+=col($n)
+    $res: 100% / $n
+    width: #{calc(#{$res} - #{$offset*2})}
+
+=p_roboto()
+    font-family: Roboto
+    font-size: 1.4rem
+    font-weight: 400
+    color: #666
+
+=price()
+    color: #ab0534
+    font-family: Roboto
+    font-size: 23px
+    font-weight: 700
+
+=indent()
+    margin-right: 4.4rem
+    margin-bottom: 5rem
+    box-shadow: 0 1px 3px rgba(27, 23, 26, 0.2)
